@@ -1,0 +1,165 @@
+$tablet: "(min-width: 68px) and (max-width: 1170px)";
+
+.gameDetails_bg_image {
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    width: 100%;
+    height: 1250px;;
+    z-index: -1;
+}
+@media #{$tablet} {
+    .gameDetails_bg_image {
+        height: 2050px;
+    }
+}
+
+.gameDetails_bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 1250px;
+    background-color: rgba(94, 94, 94, 0.459);
+    z-index: -1;
+}
+@media #{$tablet} {
+    .gameDetails_bg {
+        height: 2050px;
+    }
+}
+
+.gameDetailsMain {
+    display: flex;
+    justify-content: center;
+    margin-top: 152px;
+    .detailsContainer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 70%;
+        min-width: 350px;
+        max-width: 1040px;
+        height: 100%;
+        padding: 20px;
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.363);
+        box-shadow: 0 0 4px rgb(255, 255, 255);
+        .rightContainer {
+            height: 773px;
+            width: 50%;
+            border-radius: 0 12px 12px 0;
+            box-shadow: 0 0 4px black;
+            background-color: rgb(255, 255, 255);
+            .description {
+                display: flex;
+                flex-direction: column;
+                padding: 15px;
+                overflow: scroll;
+                text-align: center;
+                height: 100%;
+                width: 100%;
+                .gameDescription {
+                    color: black;
+                    font-weight: 600;
+                    font-size: 14px;
+                    .descriptionDetails {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+        @media #{$tablet} {
+            .rightContainer {
+                width: 100%;
+                border-radius: 12px;
+                position: relative;
+                bottom: 43px;
+                padding-top: 32px;
+            }
+        }
+        .leftContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 800px;
+            width: 50%;
+            border-radius: 12px;
+            box-shadow: 1px 0 4px black;
+            background-color: rgb(255, 255, 255);
+            z-index: 1;
+            .gameDetailsVideo {
+                background-color: rgb(0, 0, 0);
+                height: 36%;
+                width: 100%;
+                border-radius: 12px;
+                box-shadow: 0 1px 2px black;
+                overflow: hidden;
+                z-index: 1;
+                .gameCardImg {
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    background: none;
+                }
+            }
+            .gameDetailsFollowButtonContainer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 4%;
+                padding: 0 20px 0 20px;
+                margin-top: 12px;
+            }
+            .disqusContainer {
+                background-color: white;
+                height: 60%;
+                width: 100%;
+                padding: 5px 20px 20px 20px;
+                border-radius: 12px;
+                
+                overflow: scroll;
+                .disqus {
+                    height: 100%;
+                    overflow: scroll;
+                }
+            }
+
+        }
+        @media #{$tablet} {
+            .leftContainer {
+                width: 100%;
+                margin-bottom: 26px;
+            }
+        }
+    }
+}
+
+.spinnerContainer {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    .loader_3 {
+        border: 5px solid #f3f3f3;
+        /* Light grey */
+        border-top: 5px solid #3498db;
+        /* Blue */
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 2s linear infinite;
+    }
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+
+

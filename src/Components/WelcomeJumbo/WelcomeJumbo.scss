@@ -1,0 +1,39 @@
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+    height: 20%;
+    font-size: 50px;
+    padding: 0;
+}
+
+.btn-success {
+    background-color: #30b55c;
+    border: none;
+}
+
+.fa-times-circle {
+    color: white;
+}
+
+.keyImage {
+    position: relative;
+    top:32px;
+    height: 160px;
+    width: 260px;
+    -webkit-filter: drop-shadow(10px 10px 2px #000);
+    filter: drop-shadow(20px 14px 2px #000);
+}
+
+.signUpButton {
+    position: relative;
+    top:32px;
+    .buttonShadow {
+        box-shadow: 0 0 4px #fff; 
+    }
+}
+
+.hidden {
+    visibility: hidden;
+}

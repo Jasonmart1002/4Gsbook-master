@@ -1,0 +1,107 @@
+.navbar-collapse {
+    display: flex;
+    align-items: baseline;
+}
+.navbar {
+    font-weight: 600;
+    padding: 10px 50px;
+    background-color: transparent;
+}
+.navbar a {
+    color: rgb(0, 0, 0);
+}
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.navbar-brand:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navBarLinkContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.modal {
+    border: none;
+    color: black;
+}
+.modal-body {
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+.modal-header {
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+.fa-times-circle {
+    color: rgb(0, 0, 0);
+}
+
+.searchResult {
+    position: absolute;
+    right:36px;
+    margin-top: 10px;
+    min-width: 300px;
+    background-color: white;
+    box-shadow: 0 0 3px rgb(255, 255, 255);
+    border-radius: 4px;
+    overflow: hidden;
+    z-index: 2;
+    
+}
+/* Ripple effect */
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+}
+.ripple:hover {
+    background: rgba(16, 90, 95, 0.774) radial-gradient(circle, transparent 1%, rgba(16, 90, 95, 0.774) 1%) center/15000%;
+}
+.ripple:active {
+    background-color: rgba(16, 90, 95, 0.774);
+    background-size: 100%;
+    transition: background 0s;
+}
+/* Button style */
+
+.hover {
+    transition: all 0.5s;
+}
+.hover:hover {
+    opacity: 0.5;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+.userLogoutButton {
+    position: relative;
+    bottom: 3px;
+    font-size: 20px;
+}
+
+.loader_2 {
+    border: 2px solid #f3f3f3;
+    /* Light grey */
+    border-top: 2px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}

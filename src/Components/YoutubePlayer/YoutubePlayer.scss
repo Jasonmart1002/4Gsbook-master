@@ -1,0 +1,61 @@
+$tablet: "(min-width: 368px) and (max-width: 800px)";
+
+
+.youtubeContainer {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    .youtubePlayer {
+        width: 50%;
+        height: 390px;
+        border-radius: 7px;
+        overflow: hidden;
+        max-width: 600px;
+        margin-top: 93px;
+        margin-bottom: 400px;
+        box-shadow: 0 0 5px white;
+    }
+    @media #{$tablet} {
+        .youtubePlayer {
+            width: 100%;
+        }
+    }
+    .YoutubeBg {
+        z-index: -1;
+        width: 100%;
+        height: 1100px;
+        position: absolute;
+        top: 0;
+        
+        background-color: rgba(70, 70, 70, 0.521);
+    }
+}
+
+.noVideo {
+    color: white;
+    font-weight: 600;
+    font-size: 34px;
+    margin-top: 300px;
+    margin-bottom: 500px;
+}
+
+.loader_4 {
+    margin-top: 300px;
+    border: 8px solid #f3f3f3;
+    /* Light grey */
+    border-top: 8px solid #42db34;
+    /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

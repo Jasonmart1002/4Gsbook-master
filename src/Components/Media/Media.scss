@@ -1,0 +1,18 @@
+$iconSize: 24px;
+
+.mediaContainer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80px;
+    .youtubeIcon {
+        font-size: $iconSize;
+        color: red;
+    }
+    .facebookIcon {
+        font-size: $iconSize;
+        color: #4267b2;
+    }
+}
+
+
+
